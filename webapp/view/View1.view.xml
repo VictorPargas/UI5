@@ -1,0 +1,16 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" class="sapUiContentPadding" title="{i18n>title}">
+   <content>
+    <VBox class="sapUiSmallMargin" alignItems="Center" id="v">
+    <Image id="image" src="sap-icon://locked" width="89px" height="80px" class="sapUiSmallMarginBottom" />
+        <Input id="1" class="sapUiSmallMargin" width="80%" placeholder="Usuário" value="{loginModel>/username}" />
+        <Input  id="2" class="sapUiSmallMargin" width="80%" placeholder="Senha" type="Password" value="{loginModel>/password}" />
+        <Button id="button" class="sapUiSmallMargin" width="80%" text="Login" press="onLoginPress"></Button>
+    </VBox>
+   </content>
+
+        
+    </Page>
+</mvc:View>
